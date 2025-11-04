@@ -12,12 +12,12 @@ const UserSchema = new mongoose.Schema({
   },
   visitHistory: [
     {
-      timestamp: {     
+      timestamp :{     
         type: Number
       },
     },
   ],
-});
+},{timestamps:true});
 
 
 const User = mongoose.model("User", UserSchema);
